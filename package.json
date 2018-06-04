@@ -1,0 +1,27 @@
+{
+  "name": "basic-auth",
+  "version": "1.0.0",
+  "description": "Basic Authorization",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -i --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ccloops/basic-auth.git"
+  },
+  "keywords": [
+    "Basic",
+    "Auth"
+  ],
+  "author": "Catherine Looper",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ccloops/basic-auth/issues"
+  },
+  "homepage": "https://github.com/ccloops/basic-auth#readme",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "jest": "^23.1.0"
+  }
+}
