@@ -11,8 +11,10 @@ export default (req, res, next) => {
         if(!user) {
           getAuth();
         }
-        req.user = user;
-        next();
+        else {
+          req.user = user;
+          next();
+        }
       });
   };
 
@@ -46,12 +48,12 @@ export default (req, res, next) => {
       authenticate(auth, next);
     }
     else if(authHeader.match(/bearer/i)) {
-      auth.token = authHeader.replace(/Bearer\s+/, '');
+      auth.token = authHeader.replace(/Bearer\s+/i, '');
       authenticate(auth, next);
     }
-    else {
-      next();
-    }
+    // else {
+    //   next();
+    // }
   } catch(e) {
     next(e);
   }
