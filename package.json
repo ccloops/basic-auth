@@ -32,7 +32,7 @@
     "babel-env": "^2.4.1",
     "babel-eslint": "^8.2.3",
     "babel-register": "^6.26.0",
-    "bcrypt": "^2.0.1",
+    "bcrypt": "^3.0.2",
     "cors": "^2.8.4",
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
